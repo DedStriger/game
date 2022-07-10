@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "./game/static/css/main.2113c3ad.css",
-    "main.js": "./game/static/js/main.e83e9f98.js",
-    "static/media/spon2.svg": "./game/static/media/spon2.022e6b2d0c676a6b6610165e969560be.svg",
-    "static/media/hero.png": "./game/static/media/hero.868bbc28d3179dddcb58.png",
-    "static/media/spon1.svg": "./game/static/media/spon1.3c6666e8a184dd95a2df9503f8cdb9f6.svg",
-    "static/media/aionc-big.png": "./game/static/media/aionc-big.c72dea18b75631c0b1c5.png",
-    "static/media/spon4.svg": "./game/static/media/spon4.8515512f3a9ff30e311873f205f1e375.svg",
-    "static/media/avatar.png": "./game/static/media/avatar.01c8e7456330f3522524.png",
-    "static/media/spon3.svg": "./game/static/media/spon3.856b3e34057d1754151c7ada99cae280.svg",
-    "static/media/vk-white.svg": "./game/static/media/vk-white.b4131dbf9b28e847abfe9f8a2954b16a.svg",
-    "static/media/icon-vk.svg": "./game/static/media/icon-vk.38a3c9176ab80b0cdbfdc7a2ef150aaa.svg",
-    "static/media/error.svg": "./game/static/media/error.4615389a93e0d3466dfed64ab64f8b0e.svg",
-    "static/media/search.svg": "./game/static/media/search.082d277aabe11060d8f332f7fa6a81f6.svg",
-    "static/media/icon-yt.svg": "./game/static/media/icon-yt.1d94dc6e4247c56f76900800b62d0c1a.svg",
-    "index.html": "./game/index.html",
-    "static/media/success.svg": "./game/static/media/success.84d84f9ad79ca29b3fd28758a0a46bcc.svg",
-    "static/media/icon-tg.svg": "./game/static/media/icon-tg.1aa78e6546746d45df7f919b8b10d99a.svg",
-    "main.2113c3ad.css.map": "./game/static/css/main.2113c3ad.css.map",
-    "main.e83e9f98.js.map": "./game/static/js/main.e83e9f98.js.map"
+    "main.css": "./static/css/main.2113c3ad.css",
+    "main.js": "./static/js/main.bba9c894.js",
+    "static/media/spon2.svg": "./static/media/spon2.022e6b2d0c676a6b6610165e969560be.svg",
+    "static/media/hero.png": "./static/media/hero.868bbc28d3179dddcb58.png",
+    "static/media/spon1.svg": "./static/media/spon1.3c6666e8a184dd95a2df9503f8cdb9f6.svg",
+    "static/media/aionc-big.png": "./static/media/aionc-big.c72dea18b75631c0b1c5.png",
+    "static/media/spon4.svg": "./static/media/spon4.8515512f3a9ff30e311873f205f1e375.svg",
+    "static/media/avatar.png": "./static/media/avatar.01c8e7456330f3522524.png",
+    "static/media/spon3.svg": "./static/media/spon3.856b3e34057d1754151c7ada99cae280.svg",
+    "static/media/vk-white.svg": "./static/media/vk-white.b4131dbf9b28e847abfe9f8a2954b16a.svg",
+    "static/media/icon-vk.svg": "./static/media/icon-vk.38a3c9176ab80b0cdbfdc7a2ef150aaa.svg",
+    "static/media/error.svg": "./static/media/error.4615389a93e0d3466dfed64ab64f8b0e.svg",
+    "static/media/search.svg": "./static/media/search.082d277aabe11060d8f332f7fa6a81f6.svg",
+    "static/media/icon-yt.svg": "./static/media/icon-yt.1d94dc6e4247c56f76900800b62d0c1a.svg",
+    "index.html": "./index.html",
+    "static/media/success.svg": "./static/media/success.84d84f9ad79ca29b3fd28758a0a46bcc.svg",
+    "static/media/icon-tg.svg": "./static/media/icon-tg.1aa78e6546746d45df7f919b8b10d99a.svg",
+    "main.2113c3ad.css.map": "./static/css/main.2113c3ad.css.map",
+    "main.bba9c894.js.map": "./static/js/main.bba9c894.js.map"
   },
   "entrypoints": [
     "static/css/main.2113c3ad.css",
-    "static/js/main.e83e9f98.js"
+    "static/js/main.bba9c894.js"
   ]
 }
