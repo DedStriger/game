@@ -1,0 +1,7 @@
+export const MAIN_URL = '/'
+export const SERVICE_URL = '/service'
+export const GAMES_URL = '/game'
+export const ERROR_URL = '/error'
+export const SUCCESS_URL = '/success'
+export const SINGIN_URL = '/login'
+export const REGISTER_URL = '/registrate'

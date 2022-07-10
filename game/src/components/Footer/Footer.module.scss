@@ -1,0 +1,30 @@
+.container{
+    padding: 30px 0px 80px;
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text, a{
+    font-family: 'Source Sans Pro';
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.group{
+    &Link, &Social{
+        display: flex;
+        align-items: center;
+    }
+
+    &Link{
+        gap: 30px;
+    }
+
+    &Social{
+        gap: 20px;
+    }
+}

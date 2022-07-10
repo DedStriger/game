@@ -1,0 +1,124 @@
+.header, .item{
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    gap: 15px;
+
+    & > div{
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        width: 100%;
+
+        &:last-child{
+            text-align: right;
+        }
+
+        &.desc{
+            width: 300%;
+        }
+
+        &.nik{
+            width: 200%;
+        }
+
+    }
+
+    &Server{
+        position: relative;
+        &Top{
+         display: flex;
+         align-items: center;
+
+         svg{
+             margin-left: 10px;
+             display: block;
+         }
+        } 
+
+        &List{
+            position: absolute;
+
+            left: 0;
+            top: calc(100% + 10px);
+
+            background: #1B1B1B;
+
+            &Item{
+                padding: 5px;
+                border-bottom: 1px solid #514E4E;
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                color: #fff;
+                cursor: pointer;
+                line-height: 21px;
+                transition: color .3s;
+
+                &:hover{
+                    color: #069514;
+                }
+            }
+        }
+     }
+}
+
+.item{
+    padding: 20px;
+    background: #1B1B1B;
+    box-shadow: 10px 10px 4px rgba(15, 15, 15, 0.54);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.list{
+    margin-bottom: 60px;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+
+    &Img{
+        width: 44px;
+        height: 44px;
+        margin-right: 7px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    &Title{
+        
+        font-family: 'Chakra Petch';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 2px;
+    }
+
+    &Rate{
+        display: flex;
+        align-items: center;
+
+        &Star{
+            margin-right: 2px;
+        }
+
+        &Num{
+            margin-left: 2px;
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 14px;
+            color : #fff;
+        }
+    }
+}
