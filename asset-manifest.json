@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/game/static/css/main.2113c3ad.css",
-    "main.js": "/game/static/js/main.fd8e8277.js",
+    "main.js": "/game/static/js/main.2de24467.js",
     "static/media/spon2.svg": "/game/static/media/spon2.022e6b2d0c676a6b6610165e969560be.svg",
     "static/media/hero.png": "/game/static/media/hero.868bbc28d3179dddcb58.png",
     "static/media/spon1.svg": "/game/static/media/spon1.3c6666e8a184dd95a2df9503f8cdb9f6.svg",
@@ -18,10 +18,10 @@
     "static/media/success.svg": "/game/static/media/success.84d84f9ad79ca29b3fd28758a0a46bcc.svg",
     "static/media/icon-tg.svg": "/game/static/media/icon-tg.1aa78e6546746d45df7f919b8b10d99a.svg",
     "main.2113c3ad.css.map": "/game/static/css/main.2113c3ad.css.map",
-    "main.fd8e8277.js.map": "/game/static/js/main.fd8e8277.js.map"
+    "main.2de24467.js.map": "/game/static/js/main.2de24467.js.map"
   },
   "entrypoints": [
     "static/css/main.2113c3ad.css",
-    "static/js/main.fd8e8277.js"
+    "static/js/main.2de24467.js"
   ]
 }
