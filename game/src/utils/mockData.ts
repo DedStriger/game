@@ -175,3 +175,12 @@ export const lootMock= [
         nikname: 'test'
     }
 ]
+
+export const mockUser = {
+    avatar: avatar,
+    status: 'online',
+    role: 'Пользователь',
+    name: 'Dady',
+    mail: 'dady@mail.ru',
+    balance: 186
+}

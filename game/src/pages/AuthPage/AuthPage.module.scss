@@ -4,5 +4,143 @@
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-    color: red;
+}
+
+.card{
+    max-width: 380px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    background: #1B1B1B;
+    box-shadow: 0px 4px 25px 2px rgba(173, 165, 165, 0.1);
+}
+
+.tab{
+    display: flex;
+    align-items: stretch;
+
+    &Item{
+
+        width: 100%;
+        text-align: center;
+        padding: 17px;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: #fff;
+        background: #333333;
+        border-radius: 10px;
+        text-decoration: none;
+
+        &Active{
+            border-radius: 10px;
+            background: #1B1B1B;
+            color: #069514;
+        }
+    }
+}
+
+.body{
+    padding: 40px 15px;
+
+    &Row{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+.radio{
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+
+    &:checked{
+        & + label:before{
+            background: #069514;
+        }
+    }
+
+    & + label{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: 'Source Sans Pro';
+
+        &:before{
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            border: 1px solid #069514;
+            margin-right: 10px;
+        }
+    }
+}
+
+.input{
+    display: flex;
+    align-items: stretch;
+    background: #272727;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    &Img{
+        display: block;
+        padding: 8px 10px;
+        border-right: 1px solid #FFFFFF;
+        max-width: 35px;
+    }
+
+    &Input{
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 0px 8px 8px 0px;
+        padding: 5px 15px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #919191;
+        font-family: 'Source Sans Pro';
+        background: transparent;
+    }
+}
+
+.btn{
+    outline: none;
+    background: #272727;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+
+.subtitle{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Source Sans Pro';
+    color: #FFFFFF;
+    margin-bottom: 16px;
+
+    &Row{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 }

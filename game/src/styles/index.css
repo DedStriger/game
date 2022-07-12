@@ -14,8 +14,13 @@ body {
   box-sizing: border-box;
 }
 
-a{
+a, button{
   text-decoration: none;
+  transition: all .3s;
+}
+
+a:hover, button:hover{
+  opacity: .7;
 }
 
 .App {
