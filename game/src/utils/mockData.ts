@@ -184,3 +184,39 @@ export const mockUser = {
     mail: 'dady@mail.ru',
     balance: 186
 }
+
+export const mockFinance = [
+    {
+        id: '1',
+        number: 1,
+        date: '01.01.2020',
+        game: 'AION',
+        category: 'Кинары',
+        side: 'Асмодиане',
+        server: 'Нортика',
+        count: '500',
+        price: 8700
+    },
+    {
+        id: '2',
+        number: 2,
+        date: '01.01.2020',
+        game: 'AION',
+        category: 'Кинары',
+        side: 'Асмодиане',
+        server: 'Нортика',
+        count: '500',
+        price: 8700
+    },
+    {
+        id: '3',
+        number: 3,
+        date: '01.01.2020',
+        game: 'AION',
+        category: 'Кинары',
+        side: 'Асмодиане',
+        server: 'Нортика',
+        count: '500',
+        price: 8700
+    }
+]

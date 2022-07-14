@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../Logo/Logo'
 import styles from './Header.module.scss'
-import { MAIN_URL, REGISTER_URL, SERVICE_URL, SINGIN_URL, CONTACT_URL, FINANCE_URL } from '../../utils/links';
+import { MAIN_URL, REGISTER_URL, SERVICE_URL, SINGIN_URL, CONTACT_URL, FINANCE_URL, BUY_URL, COMUNITY_URL } from '../../utils/links';
 import vkWhite from '../../assets/vk-white.svg';
 import ProfileCircle from './ProfileCircle';
 
@@ -44,13 +44,13 @@ export default function Header({auth} : HeaderProps){
                     {
                         auth ? (
                             <>
-                            <Link to={{pathname: MAIN_URL}}>
+                            <Link to={{pathname: BUY_URL}}>
                                 Покупки
                             </Link>
                             <Link to={{pathname: FINANCE_URL}}>
                                 Финансы
                             </Link>
-                            <Link to={{pathname: SINGIN_URL}}>
+                            <Link to={{pathname: COMUNITY_URL}}>
                                 Сообщения 
                             </Link>
                             <ProfileCircle/>
