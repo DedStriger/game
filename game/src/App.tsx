@@ -13,7 +13,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import FinancePage from './pages/FinancePage/FinancePage';
 import BuyPage from './pages/BuyPage/BuyPage';
-import ComunityPage from './pages/ComunityPage/ComunityPage';
+import ComunityPage, {ComunityPageVariant} from './pages/ComunityPage/ComunityPage';
 import SettingsPage from './pages/SettingsPage/SettingsPage';
 import OrderPage from './pages/OrderPage/OrderPage';
 import OrderConfirmPage from './pages/OrderConfirmPage/OrderConfirmPage';
@@ -25,7 +25,8 @@ function App() {
   location.pathname === PROFILE_URL ||
   location.pathname === FINANCE_URL ||
   location.pathname === SETTINGS_URL ||
-  location.pathname === COMUNITY_URL
+  location.pathname === COMUNITY_URL || 
+  location.pathname === BUY_URL
   , [location.pathname])
   return(
     <div className="App">
@@ -65,12 +66,15 @@ function App() {
           <BuyPage/>
         </Route>  
         <Route path={COMUNITY_URL} exact>
-          <ComunityPage/>
+          <ComunityPage variant={ComunityPageVariant.NoChat}/>
+        </Route>
+        <Route path={COMUNITY_URL+'/:id'} exact>
+          <ComunityPage variant={ComunityPageVariant.Chat}/>
         </Route>
         <Route path={SETTINGS_URL} exact>
           <SettingsPage/>
         </Route>
-        <Route path={ORDER_URL} exact>
+        <Route path={`${ORDER_URL}/:id`} exact>
           <OrderPage/>
         </Route>
         <Route path={COMFIRM_URL} exact>

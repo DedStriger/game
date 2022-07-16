@@ -3,7 +3,12 @@ import {useState} from 'react';
 import { lootMock } from '../../../../utils/mockData';
 import TableItem from './TableItem';
 
-export default function Table(){
+export type TableProps = {
+    game: string;
+    category: string;
+}
+
+export default function Table(props: TableProps){
     const [, setServer] = useState('')
     const [show, setShow] = useState(false)
     const handleSetServer = (val: string) => {
@@ -36,7 +41,7 @@ export default function Table(){
             <div className={styles.list}>
                 {
                     lootMock.map(item => (
-                        <TableItem key={item.id} {...item}/>
+                        <TableItem key={item.id} {...props} {...item}/>
                     ))
                 }
             </div>

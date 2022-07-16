@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../Logo/Logo'
 import styles from './Header.module.scss'
@@ -11,9 +11,19 @@ export type HeaderProps = {
 }
 
 export default function Header({auth} : HeaderProps){
+    const refHeader = useRef<HTMLDivElement>(null)
+    useEffect(() => {
+        const handle = () => {
+            
+            window.pageYOffset > 130 ? refHeader.current?.classList.add('fixed') : refHeader.current?.classList.remove('fixed')
+        }
+        window.addEventListener('scroll', handle)
+
+        return () => window.removeEventListener('scroll', handle)
+    }, [])
     return(
         <header className={styles.container}>
-            <div className={styles.top}>
+            <div className={styles.top} ref={refHeader}>
                 <Logo/>
                 <div className={styles.groupLink}>
                     <Link to={{pathname: MAIN_URL}}>

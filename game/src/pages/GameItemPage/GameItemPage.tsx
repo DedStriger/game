@@ -9,12 +9,13 @@ import Table from "./components/Table/Table";
 
 export default function GameItemPage(){
     const match = useRouteMatch<{id: string}>()
-    const [values, setValues] = useState('')
     const item = useMemo(() => games.filter(item => item.id === match.params.id)[0], [match.params.id])
+    const [values, setValues] = useState('')
+    const [activeCategory, setActiveCategory] = useState(item.tags.split(',')[0])
   
     return(
         <div>
-            <Card {...item}/>
+            <Card category={activeCategory} setCategory={setActiveCategory} {...item}/>
             <div className={styles.search}>
                 <Search
                     value={values}
@@ -22,7 +23,7 @@ export default function GameItemPage(){
                     placeholder='Поиск по предложениям...'
                 />
             </div>
-            <Table/>
+            <Table game={item.name} category={activeCategory}/>
         </div>
     )
 }

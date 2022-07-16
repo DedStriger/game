@@ -46,7 +46,7 @@
     line-height: 22px;
     transition: all .3s;
 
-    &:hover{
+    &:hover, &Active{
         background: #0C6515;
         box-shadow: 4px 4px 4px rgba(0, 250, 25, 0.6);
     }

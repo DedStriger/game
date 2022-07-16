@@ -1,4 +1,6 @@
 import styles from './Table.module.scss'
+import {ORDER_URL} from '../../../../utils/links'
+import { Link } from 'react-router-dom';
 
 export type TableItemProps = {
     server: string;
@@ -10,11 +12,17 @@ export type TableItemProps = {
     count: number;
     nikname: string;
     price: number;
+    game: string;
+    category: string;
+    id: string;
 }
 
-export default function TableItem({server, side, description, nikname, avatar, rate, review, count, price}: TableItemProps){
+export default function TableItem({ id, server, game, category, side, description, nikname, avatar, rate, review, count, price}: TableItemProps){
     return(
-       <div className={styles.item}>
+       <Link 
+        className={styles.item}
+        to={{pathname: `${ORDER_URL}/${id}`, state: {nikname, avatar, server, side, count, game, back: category}}}
+       >
         <div>{server}</div>
         <div>{side}</div>
         <div className={styles.desc}>{description}</div>
@@ -28,7 +36,7 @@ export default function TableItem({server, side, description, nikname, avatar, r
         </div>
         <div>{count}</div>
         <div>{price} ₽</div>
-       </div>
+       </Link>
     )
 }
 

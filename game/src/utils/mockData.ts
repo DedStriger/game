@@ -185,7 +185,7 @@ export const mockUser = {
     balance: 186
 }
 
-export const mockFinance = [
+export const mockBuy = [
     {
         id: '1',
         number: 1,
@@ -218,5 +218,65 @@ export const mockFinance = [
         server: 'Нортика',
         count: '500',
         price: 8700
+    }
+]
+
+export const mockFinance = [
+    {
+        id: '1',
+        type: 'Оплата услуг',
+        paySystem:'Visa',
+        account: '**** 3456',
+        recipient: 'Webmoney',
+        date: '01/01/2020',
+        balance: '2200'
+    },
+    {
+        id: '2',
+        type: 'Оплата услуг',
+        paySystem:'Visa',
+        account: '**** 3456',
+        recipient: 'Webmoney',
+        date: '01/01/2020',
+        balance: '2200'
+    }
+]
+
+export const historyReviewMock = [
+    {
+        id: '1',
+        nickname: 'nickname',
+        date: '28.04.2022',
+        text: 'Все честно куплю еще раз',
+        rate: 3
+    },
+    {
+        id: '2',
+        nickname: 'nickname',
+        date: '28.04.2022',
+        text: 'Все честно куплю еще раз',
+        rate: 4
+    },
+    {
+        id: '3',
+        nickname: 'nickname',
+        date: '28.04.2022',
+        text: 'Все честно куплю еще раз',
+        rate: 3
+    }
+]
+
+export const mockChatUsers = [
+    {
+        id: '1',
+        avatar: avatar,
+        nickname: 'test1t13',
+        status: 'ofline'
+    },
+    {
+        id: '2',
+        avatar: avatar,
+        nickname: 'Никита',
+        status: 'online'
     }
 ]

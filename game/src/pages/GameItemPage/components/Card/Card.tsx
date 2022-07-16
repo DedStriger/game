@@ -1,3 +1,4 @@
+
 import styles from './Card.module.scss'
 
 export type CardProps = {
@@ -5,9 +6,11 @@ export type CardProps = {
     name: string;
     description: string;
     tags: string;
+    category: string;
+    setCategory: (val: string) => void;
 }
 
-export default function Card({imgBig, name, description, tags}: CardProps){
+export default function Card({imgBig, name, description, tags, category, setCategory}: CardProps){
     return(
         <div className={styles.container}>
             <img className={styles.img} src={imgBig} alt="avatar" />
@@ -17,7 +20,11 @@ export default function Card({imgBig, name, description, tags}: CardProps){
                 <div className={styles.itemContainer}>
                     {
                         tags.split(',').map((item, index) => (
-                            <div className={styles.item} key={index} onClick={() => {}}>
+                            <div 
+                                className={category === item ? `${styles.item} ${styles.itemActive}` : styles.item} 
+                                key={index}
+                                onClick={() => setCategory(item)}
+                            >
                                 {item}
                             </div>
                         ))
