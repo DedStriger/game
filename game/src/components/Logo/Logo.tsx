@@ -5,7 +5,8 @@ const styles = {
     textDecoration: 'none',
     fontFamily: 'Inter',
     color: '#fff',
-    fontSize: 50
+    fontSize: 50,
+    lineHeight: '100% !important'
 }
 
 export default function Logo(){

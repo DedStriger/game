@@ -43,3 +43,16 @@
         line-height: 18px;
     }
 }
+
+@media(max-width: 1000px) {
+    .result{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 600px){
+    .result{
+        grid-template-columns: 1fr;
+    }
+}

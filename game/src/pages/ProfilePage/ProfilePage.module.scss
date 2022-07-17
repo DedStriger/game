@@ -82,3 +82,23 @@
         }
     }
 }
+
+@media(max-width: 500px){
+    .content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        &Left, &Right{
+            align-items: center;
+            justify-content: center;
+            border-right: none !important;
+            text-align: center;
+        }
+
+        &Left{
+            & > div:last-child{display: none;}
+        }
+    }
+}

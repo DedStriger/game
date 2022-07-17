@@ -18,6 +18,7 @@
     &Link, &Social{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &Link{
@@ -26,5 +27,14 @@
 
     &Social{
         gap: 20px;
+    }
+}
+
+@media(max-width: 1000px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px
     }
 }

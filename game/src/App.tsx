@@ -25,7 +25,7 @@ function App() {
   location.pathname === PROFILE_URL ||
   location.pathname === FINANCE_URL ||
   location.pathname === SETTINGS_URL ||
-  location.pathname === COMUNITY_URL || 
+  !!location.pathname.match(COMUNITY_URL) || 
   location.pathname === BUY_URL
   , [location.pathname])
   return(
