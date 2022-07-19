@@ -12,7 +12,12 @@
     font-family: 'Source Sans Pro';
     color: #BDBDBD;
     cursor: pointer;
-    font-size: 18px
+    font-size: 18px;
+    transition: color .3s;
+
+    &:hover{
+        color: #fff;
+    }
 }
 
 @media(max-width: 1000px){

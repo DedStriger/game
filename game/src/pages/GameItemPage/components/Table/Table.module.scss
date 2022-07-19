@@ -1,3 +1,9 @@
+.table{
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
 .header, .item{
     padding: 0px 20px;
     display: flex;
@@ -5,6 +11,7 @@
     justify-content: space-between;
     color: #fff;
     gap: 15px;
+    min-width: 800px;
 
     & > div{
         font-family: 'Source Sans Pro';
@@ -77,7 +84,7 @@
 }
 
 .list{
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 .avatar{

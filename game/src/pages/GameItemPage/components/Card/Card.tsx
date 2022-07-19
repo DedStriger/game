@@ -15,7 +15,10 @@ export default function Card({imgBig, name, description, tags, category, setCate
         <div className={styles.container}>
             <img className={styles.img} src={imgBig} alt="avatar" />
             <div>
-                <div className={styles.title}>{name}</div>
+                <div className={styles.title}>
+                    <span>{name}</span>
+                    <button>Продать валюту</button>
+                </div>
                 <div className={styles.text}>{description}</div>
                 <div className={styles.itemContainer}>
                     {

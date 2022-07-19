@@ -12,19 +12,41 @@
 }
 
 .title{
-    font-family: 'Chakra Petch';
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 52px;
-    color: #fff;
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    span{
+        font-family: 'Chakra Petch';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+        color: #fff;
+    }
+
+    button{
+        max-width: 200px;
+        border: none;
+        outline: none;
+        color: #fff;
+        width: 100%;
+        line-height: 50px;
+        text-align: center;
+        font-size: 15px;
+        background: #0C6515;
+        border-radius: 10px;
+        font-weight: 500;
+
+    }
 }
 
 .text{
     font-family: 'Chakra Petch';
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 26px;
     margin-bottom: 30px;
     color: #FFFFFF;
@@ -41,7 +63,7 @@
     cursor: pointer;
     font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 17px;
     line-height: 22px;
     transition: all .3s;
@@ -54,6 +76,40 @@
     &Container{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 20px;
+    }
+}
+
+@media(max-width: 1000px){
+    .container{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .title{
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+        span{
+            font-size: 32px;
+        }
+
+        .button{
+            line-height: 40px;
+        }
+    }
+
+    .text{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 500px){
+    .title{
+        button{
+            width: 100%;
+            max-width: none;
+        }
     }
 }

@@ -32,7 +32,6 @@ export default function Footer(){
                     <img src={tg} alt="icon" />
                 </a>
             </div>
-            <Logo/>
         </footer>
     )
 }

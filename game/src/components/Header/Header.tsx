@@ -24,13 +24,13 @@ export default function Header({auth} : HeaderProps){
     }, [])
     return(
         <header className={styles.container}>
-            <div className={styles.top} ref={refHeader} style={show ? {height: 'auto', overflow: 'visible'} : {}}>
+            <div className={styles.top} ref={refHeader}>
                 <Logo/>
                 <svg width="36" onClick={() => setShow(!show)} className={styles.burger} height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 22C0 23.1046 0.895431 24 2 24H34C35.1046 24 36 23.1046 36 22V22C36 20.8954 35.1046 20 34 20H2C0.895431 20 0 20.8954 0 22V22ZM0 12C0 13.1046 0.895431 14 2 14H34C35.1046 14 36 13.1046 36 12V12C36 10.8954 35.1046 10 34 10H2C0.895431 10 0 10.8954 0 12V12ZM2 0C0.895431 0 0 0.895431 0 2V2C0 3.10457 0.895431 4 2 4H34C35.1046 4 36 3.10457 36 2V2C36 0.895431 35.1046 0 34 0H2Z" fill="white"/>
                 </svg>
 
-                <div className={styles.menu}>
+                <div className={styles.menu} style={show ? {transform: 'none'} : {}} onClick={() => setShow(!show)}>
                     <div className={styles.groupLink}>
                         <Link to={{pathname: MAIN_URL}}>
                             Главная

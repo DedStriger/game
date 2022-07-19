@@ -16,7 +16,7 @@ export default function Table(props: TableProps){
         setServer(val)
     }
     return(
-        <div>
+        <div className={styles.table}>
             <div className={styles.header}>
                 <div className={styles.headerServer}>
                     <div className={styles.headerServerTop} onClick={() => setShow(!show)}>
