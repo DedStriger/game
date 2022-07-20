@@ -61,3 +61,15 @@
     }
 }
 
+@media(max-width: 1000px){
+    .container{
+        flex-direction: column;
+        gap: 0px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .chat{
+        height: 500px;
+    }
+}

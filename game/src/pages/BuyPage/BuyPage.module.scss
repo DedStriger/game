@@ -79,3 +79,20 @@
         background: #1B1B1B;
     }
 }
+
+@media(max-width: 850px){
+    .table{
+        padding: 0;
+        margin-bottom: 20px;
+        overflow-x: scroll;
+
+        & > div{
+            min-width: 850px;
+        }
+    }
+
+    .items{
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+}

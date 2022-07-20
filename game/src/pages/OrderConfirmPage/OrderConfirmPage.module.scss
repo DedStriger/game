@@ -135,3 +135,45 @@
     width: 100%;
     max-width: 280px;
 }
+
+@media(max-width: 1000px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 800px){
+    .container{
+        flex-direction: column;
+        flex-grow: none;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .title{
+        margin-bottom: 30px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .card{
+        max-width: none;
+        width: 100%;
+    }
+
+    .input{
+        width: 100%;
+        max-width: none;
+    }
+
+    .table{
+        overflow-x: scroll;
+        & > div{
+            min-width: 600px;
+        }
+        
+    }
+}

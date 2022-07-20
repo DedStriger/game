@@ -170,3 +170,41 @@
         }
     }
 }
+
+@media(max-width: 800px){
+    .balance{
+        margin-bottom: 30px;
+        flex-direction: column;
+        padding: 20px;
+
+        &Value{
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        &Btns{
+            padding: 0;
+        }
+
+        &Btn{
+            max-width: none;
+        }
+    }
+
+    .infoRow{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .table{
+        overflow-x: scroll;
+        margin-bottom: 20px;
+
+        & > div{
+            min-width: 800px;
+            margin-bottom: 0 !important;
+        }
+    }
+}
