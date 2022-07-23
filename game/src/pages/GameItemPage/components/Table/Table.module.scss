@@ -55,12 +55,13 @@
 
             left: 0;
             top: calc(100% + 10px);
+            width: 100%;
+            border-radius: 5px;
 
-            background: #1B1B1B;
+            background: #322f2f;
 
             &Item{
-                padding: 5px;
-                border-bottom: 1px solid #514E4E;
+                padding: 10px;
                 font-family: 'Source Sans Pro';
                 font-style: normal;
                 font-weight: 400;

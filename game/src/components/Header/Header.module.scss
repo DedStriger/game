@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 15px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #444;
     transition: all .7s;
     gap: 20px;
 }
@@ -332,7 +332,7 @@
 
     .groupSocial{
         padding: 20px 0;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #444;
         width: 100%;
         margin-bottom: 0;
     }
@@ -345,7 +345,7 @@
         & > a{
             text-align: center;
             width: 100%;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #444;
             padding: 15px 0;
         }
     }
@@ -364,7 +364,7 @@
             width: 100%;
         border-radius: 0px;
         
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #444;
         }
     }
 
@@ -390,23 +390,34 @@
             width: 100%;
             border-radius: 0px;
             
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #444;
         }
 
         &Active{
             border-radius: 0px;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #444;
         }
 
         &ActiveService{
             text-align: center;
             width: 100%;
             padding: 10px 0;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #444;
         }
     }
 
     .profile{
         margin-top: 10px;
+        flex-wrap: wrap;
+
+        &Menu{
+            margin-top: 10px;
+            position: static;
+            width: 100%;
+            a{
+                border-radius: 0px !important;
+                width: 100%;
+            }
+        }
     }
 }
