@@ -1,12 +1,12 @@
 .container{
-    padding: 30px 0px 60px;
+    padding: 10px 0px 60px;
 }
 
 .top{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #fff;
     transition: all .7s;
     gap: 20px;
@@ -31,9 +31,81 @@
 }
 
 .groupLink a{
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'Source Sans Pro';
     color: #FFFFFF;
+}
+
+@keyframes bAnim {
+    0%{
+        top: 50%;
+        left: 50%;
+    }
+
+    25%{
+        top: calc(50% + 3px);
+        left: calc(50% + 2px);
+    }
+
+    50%{
+        top: calc(50% - 2px);
+        left: calc(50% - 2px);
+    }
+
+    75%{
+        top: calc(50% - 2px);
+        left: calc(50% + 3px);
+    }
+
+    100%{
+
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@keyframes gAnim {
+    0%{
+        top: 50%;
+        left: 50%;
+    }
+
+    25%{
+        top: calc(50% - 3px);
+        left: calc(50% - 2px);
+    }
+
+    50%{
+        top: calc(50% + 2px);
+        left: calc(50% + 2px);
+    }
+
+    75%{
+        top: calc(50% + 2px);
+        left: calc(50% - 3px);
+    }
+
+    100%{
+
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+    }
+}
+
+.t{
+    z-index: 3;
+    position: absolute;
+}
+
+.g{
+    z-index: 2;
+    position: absolute;
+}
+
+.b{
+    position: absolute;
+    z-index: 1;
 }
 
 .groupSocial{
@@ -44,11 +116,28 @@
 
 .groupSocial a{
     transition: box-shadow .3s;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: block;
+
+    img{
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    &:hover{
+        img[class^=Header_b]{
+            animation: bAnim 0.4s ease infinite;
+        }
+
+        img[class^=Header_g]{
+            animation: gAnim 0.4s ease infinite;
+        }
+    }
 }
 
-.groupSocial a:hover img{
-    box-shadow: 0px 4px 4px rgba(255, 254, 254, 0.72);
-}
 
 .groupBtn{
     display: flex;
@@ -63,23 +152,45 @@
         min-width: 80px;
         background: #322F2F;
         border-radius: 5px; 
-        font-size: 17px;
+        font-size: 14px;
         line-height: 21px;
+        transition: background .3s;
+
+        &:first-child{
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        &:last-child{
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        &:hover{
+            background: #069514;
+            opacity: 1 !important;
+        }
     }
 }
 
 .bottom{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 30px;
+    gap: 20px;
+    padding-top: 15px;
 
     a{
         font-family: 'Inter';
-        font-size: 20px;
-        line-height: 24px;
-
+        font-size: 14px;
+        line-height: 21px;
+        padding: 7px 12px;
+        border-radius: 5px;
+        
+        background: #322F2F;
         color: #FFFFFF;
+
+        &:hover{
+            background: #069514;
+            opacity: 1 !important;
+        }
     }
 }
 
@@ -109,7 +220,67 @@
             align-items: center;
             justify-content: space-between;
             border-radius: 0;
-            border-bottom: 1px solid #000;
+        }
+    }
+}
+
+.lang{
+    position: relative;
+    &Active{
+        font-family: 'Source Sans Pro';
+        color: #FFFFFF;
+        text-align: center;
+        padding: 7px 12px;
+        min-width: 80px;
+        background: #322F2F;
+        border-radius: 5px; 
+        font-size: 17px;
+        line-height: 21px;
+        position: relative;
+        cursor: pointer;
+        transition: background .3s;
+
+        &:hover{
+            background: #069514;
+            opacity: 1 !important;
+        }
+    }
+
+    &ActiveService{
+        font-size: 14px;
+        color: #fff;
+        cursor: pointer;
+
+        & + div > a{
+            display: block;
+        }
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    &Container{
+        background: #322F2F;
+        border-radius: 5px;
+        position: absolute;
+        top: calc(100% + 10px)
+    }
+
+    &Item{
+        font-family: 'Source Sans Pro';
+        color: #FFFFFF;
+        text-align: center;
+        padding: 7px 12px;
+        min-width: 80px;
+        cursor: pointer; 
+        font-size: 14px;
+        line-height: 21px;
+
+        transition: color .3s;
+
+        &:hover{
+            color: #069514;
         }
     }
 }
@@ -140,9 +311,8 @@
 
     .menu{
         width: 80%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        padding: 0;
         gap: 15px;
         position: fixed;
         top: 60px;
@@ -154,29 +324,48 @@
         transform: translateX(100%);
 
         & > * {
-            margin-right: 20px;
-            margin-left: 20px;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
         }
     }
 
+    .groupSocial{
+        padding: 20px 0;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
     .groupLink, .groupBtn{
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
+        width: 100%;
+
+        & > a{
+            text-align: center;
+            width: 100%;
+            border-bottom: 1px solid #fff;
+            padding: 15px 0;
+        }
     }
 
     .bottom{
-        a{
-            font-size: 16px;
-        }
+
+        flex-wrap: wrap;
     }
 
     .groupBtn{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        
+        a{
+            width: 100%;
+        border-radius: 0px;
+        
+        border-bottom: 1px solid #fff;
+        }
     }
 
     .profile{
@@ -189,5 +378,35 @@
             z-index: 11;
             width: 100%;
         }
+    }
+
+    .lang{
+        width: 100%;
+        &Container{
+            position: static;
+            width: 100%;
+            background: none;
+            margin: 0px 0;
+            width: 100%;
+            border-radius: 0px;
+            
+            border-bottom: 1px solid #fff;
+        }
+
+        &Active{
+            border-radius: 0px;
+            border-bottom: 1px solid #fff;
+        }
+
+        &ActiveService{
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    .profile{
+        margin-top: 10px;
     }
 }

@@ -32,6 +32,8 @@ export default function TableItem({ id, server, game, category, side, descriptio
                 name={nikname}
                 review={review}
                 rate={rate}
+                server={server}
+                side={side}
             />
         </div>
         <div>{count}</div>
@@ -45,11 +47,17 @@ type AvatarProps = {
     rate: number;
     review: number;
     name: string;
+    side: string;
+    server: string;
 }
 
-const Avatar = ({img, rate, review, name} : AvatarProps) => {
+const Avatar = ({img, rate, review, name, side, server} : AvatarProps) => {
     return(
         <div className={styles.avatar}>
+            <div className={styles.mob}>
+                <span>{side}</span>
+                <span>{server}</span>
+            </div>
             <img src={img} className={styles.avatarImg} alt='avatar' />
             <div>
                 <div className={styles.avatarTitle}>{name}</div>

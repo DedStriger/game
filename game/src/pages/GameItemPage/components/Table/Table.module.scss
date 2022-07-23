@@ -1,8 +1,12 @@
 .table{
-    overflow-x: scroll;
     padding-bottom: 20px;
     margin-bottom: 60px;
 }
+
+.mob{
+    display: none;
+}
+
 
 .header, .item{
     padding: 0px 20px;
@@ -11,14 +15,13 @@
     justify-content: space-between;
     color: #fff;
     gap: 15px;
-    min-width: 800px;
 
     & > div{
         font-family: 'Source Sans Pro';
         font-style: normal;
         font-weight: 400;
-        font-size: 17px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 16px;
         width: 100%;
 
         &:last-child{
@@ -61,7 +64,7 @@
                 font-family: 'Source Sans Pro';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 17px;
+                font-size: 14px;
                 color: #fff;
                 cursor: pointer;
                 line-height: 21px;
@@ -76,9 +79,8 @@
 }
 
 .item{
-    padding: 20px;
+    padding: 10px 20px;
     background: #1B1B1B;
-    box-shadow: 10px 10px 4px rgba(15, 15, 15, 0.54);
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -127,5 +129,29 @@
             line-height: 14px;
             color : #fff;
         }
+    }
+}
+
+@media(max-width: 550px){
+    .mob{
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+
+        span{
+            font-size: 11px;
+            color:rgba(255,255,255, 0.54);
+            margin-right: 5px;
+        }
+    }
+
+    .avatar{
+        flex-wrap: wrap;
+    }
+    .item, .header{
+        & > div:nth-child(3), & > div:nth-child(2), & > div:nth-child(1){
+            display: none;
+        }
+        
     }
 }

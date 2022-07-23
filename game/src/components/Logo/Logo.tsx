@@ -6,7 +6,8 @@ const styles = {
     fontFamily: 'Inter',
     color: '#fff',
     fontSize: 50,
-    lineHeight: '100% !important'
+    lineHeight: '100% !important',
+    width: '100px'
 }
 
 export default function Logo(){

@@ -38,11 +38,13 @@ const Item = ({title, description} : ItemProps) => {
     const [isShow, setIsShow] = useState(false)
     return(
         <div className={styles.item} onClick={() => setIsShow(!isShow)}>
-            <div className={styles.itemTitle}>{title}</div>
+            <div className={styles.itemTitle}>
+                <span>{title}</span>
+                <div className={isShow ? `${styles.itemIcon} ${styles.itemIconActive}` : styles.itemIcon}>
+                    {isShow ? '-' : "+"}
+                </div>
+            </div>
             {isShow && <div className={styles.itemText}>{description}</div>}
-            <svg width="15" className={ isShow ? `${styles.itemIcon} ${styles.itemIconActive}` : styles.itemIcon} height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.29663 0.340492L14.6696 6.92047C15.1101 7.37527 15.1101 8.11068 14.6696 8.56063L13.6106 9.65407C13.1701 10.1089 12.4578 10.1089 12.022 9.65407L7.5 4.99486L2.98266 9.65891C2.54217 10.1137 1.8299 10.1137 1.3941 9.65891L0.330365 8.56547C-0.110122 8.11068 -0.110122 7.37527 0.330365 6.92531L6.70337 0.345331C7.14386 -0.1143 7.85614 -0.114301 8.29663 0.340492V0.340492Z" fill="white"/>
-            </svg>
         </div>
     )
 }

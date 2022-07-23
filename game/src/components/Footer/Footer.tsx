@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
-import Logo from '../Logo/Logo'
 import styles from './Footer.module.scss'
-import yt from '../../assets/icon-yt.svg'
-import vk from '../../assets/icon-vk.svg'
+import tgB from '../../assets/icon-tg-bl.svg'
+import tgG from '../../assets/icon-tg-gr.svg'
 import tg from '../../assets/icon-tg.svg'
 import { MAIN_URL } from '../../utils/links'
 
@@ -22,15 +21,21 @@ export default function Footer(){
                 </Link>
             </div>
             <div className={styles.groupSocial}>
-                <a href="/" target='_blank'>
-                    <img src={yt} alt="icon" />
-                </a>
-                <a href="/" target='_blank'>
-                    <img src={vk} alt="icon" />
-                </a>
-                <a href="/" target='_blank'>
-                    <img src={tg} alt="icon" />
-                </a>
+                        <a href='#' target='_blank'>
+                            <img src={tg} className={styles.t} alt="icon" />
+                            <img src={tgB} className={styles.b} alt="icon" />
+                            <img src={tgG} className={styles.g} alt="icon" />
+                        </a>
+                        <a href='#' target='_blank'>
+                            <img src={tg} className={styles.t} alt="icon" />
+                            <img src={tgB} className={styles.b} alt="icon" />
+                            <img src={tgG} className={styles.g} alt="icon" />
+                        </a>
+                        <a href='#' target='_blank'>
+                            <img src={tg} className={styles.t} alt="icon" />
+                            <img src={tgB} className={styles.b} alt="icon" />
+                            <img src={tgG} className={styles.g} alt="icon" />
+                        </a>
             </div>
         </footer>
     )

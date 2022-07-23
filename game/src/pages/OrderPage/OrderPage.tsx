@@ -41,7 +41,7 @@ export default function OrderPage(){
             </button>
             <div className={styles.title}>{location.state.game || ''}</div>
             <div className={styles.content}>
-                <div>
+                <div className={styles.info}>
                     <div className={styles.table}>
                         <div className={styles.tableHeader}>
                             <span>Игра:</span>

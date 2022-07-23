@@ -21,8 +21,8 @@
     span{
         font-family: 'Chakra Petch';
         font-weight: 600;
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 30px;
+        line-height: 32px;
         color: #fff;
     }
 
@@ -64,13 +64,13 @@
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 22px;
     transition: all .3s;
 
     &:hover, &Active{
         background: #0C6515;
-        box-shadow: 4px 4px 4px rgba(0, 250, 25, 0.6);
+        // box-shadow: 4px 4px 4px rgba(0, 250, 25, 0.6);
     }
 
     &Container{
@@ -92,7 +92,8 @@
         flex-wrap: wrap;
         gap: 20px;
         span{
-            font-size: 32px;
+            font-size: 20px;
+            line-height: 22px;
         }
 
         .button{
@@ -105,11 +106,24 @@
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
     .title{
         button{
             width: 100%;
             max-width: none;
+        }
+    }
+
+    .img{
+        max-width: 150px;
+    }
+
+    .item{
+        width: 100%;
+        &Container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
     }
 }

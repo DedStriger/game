@@ -4,7 +4,7 @@ import aionc from '../assets/aionc.png'
 import aioncBig from '../assets/aionc-big.png'
 import avatar from '../assets/avatar.png'
 
-export const lettersMock = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'А', 'В', 'Г', 'К', 'Л', 'М', 'П', 'Р', 'Т', 'Я']
+export const lettersMock = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y']
 
 export const games = [
     {

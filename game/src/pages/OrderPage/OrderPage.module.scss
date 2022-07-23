@@ -15,6 +15,10 @@
     }
 }
 
+.info{
+    width: 75%;
+}
+
 .container{
     flex-grow: 1;
     margin-bottom: 70px;
@@ -23,7 +27,8 @@
 .title{
     color: #fff;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 22px;
     margin-bottom: 60px;
 }
 
@@ -47,11 +52,11 @@
         justify-content: space-between;
         background: #413E3E;
         border-radius: 10px 10px 0px 0px;
-        padding: 20px;
+        padding: 10px 20px;
 
         span{
-            font-size: 17px;
-            line-height: 22px;
+            font-size: 14px;
+            line-height: 16px;
             width: 100%;
             color: #fff;
         }
@@ -153,12 +158,18 @@
 
         li{
             background: #1B1B1B;
-            border-bottom: 1px solid #514E4E;
-            padding: 5px 10px;
+            padding: 10px;
             color: #fff;
             cursor: pointer;
             transition: color .3s;
             list-style: none;
+            &:first-child{
+                border-radius: 5px 5px 0px 0px;
+            }
+    
+            &:last-child{
+                border-radius: 0px 0px 5px 5px;
+            }
 
             &:hover{
                 color: #069514;
@@ -256,12 +267,12 @@
 
 }
 
-@media(max-width: 600px){
+@media(max-width: 500px){
     .table{
         overflow-x: scroll;
         
         & > div{
-            min-width: 600px;
+            min-width: 500px;
         }
     }
 

@@ -13,11 +13,10 @@
 
 .back{
     display: flex;
-    margin-top: 4px;
     align-items: center;
     cursor: pointer;
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 16px;
     outline: none;
     border: none;
     background: transparent;
@@ -31,7 +30,8 @@
 .title{
     color: #fff;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 22px;
     margin-bottom: 60px;
 }
 
@@ -54,11 +54,11 @@
         justify-content: space-between;
         background: #413E3E;
         border-radius: 10px 10px 0px 0px;
-        padding: 20px;
+        padding: 10px 20px;
 
         span{
-            font-size: 17px;
-            line-height: 22px;
+            font-size: 14px;
+            line-height: 16px;
             width: 100%;
             color: #fff;
         }
@@ -104,12 +104,12 @@
         line-height: 40px;
         font-size: 14px;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     &Text{
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 14px;
         color: #A6A6A6;
     }
 }
@@ -133,7 +133,6 @@
     line-height: 22px;
     display: block;
     width: 100%;
-    max-width: 280px;
 }
 
 @media(max-width: 1000px){

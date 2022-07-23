@@ -2,7 +2,7 @@
     font-family: 'Chakra Petch';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 34px;
     line-height: 52px;
     margin-bottom: 15px;
     text-align: center;
@@ -10,27 +10,27 @@
 }
 
 .text{
-    margin-bottom: 30px;
     text-align: center;
     font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 17px;
     line-height: 22px;
+    margin: 0 auto 30px;
     color: #fff;
+    max-width: 550px;
 }
 
 .container{
     background: #1B1B1B;
     box-shadow: 0px 4px 25px 2px rgba(173, 165, 165, 0.1);
     border-radius: 10px;
-    max-width: 1000px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .item{
-    padding: 30px 40px;
-    padding-right: 100px;
+    padding: 20px 20px;
     position: relative;
     cursor: pointer;
 
@@ -43,30 +43,40 @@
         font-family: 'Source Sans Pro';
         font-style: normal;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 18px;
         line-height: 28px;
         color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &Text{
         font-family: 'Source Sans Pro';
-        font-size: 17px;
+        font-size: 15px;
         line-height: 22px;
+        font-weight: 300;
         margin-top: 20px;
+        text-align: center;
 
         color: #FFFFFF;
     }
 
     &Icon{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 30px;
-        transition: all .3s;
+
+        margin-left: 10px;
+        font-size: 18px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        width: 20px;
+        height: 20px;
 
         &Active{
-            transform: rotate(180deg);
-            transform-origin: center center;
+            color: #069514;
+            border-color: #069514;
         }
     }
 }
