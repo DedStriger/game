@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/game/static/css/main.520a891f.css",
-    "main.js": "/game/static/js/main.d72d44e9.js",
+    "main.css": "/game/static/css/main.c6dfdbfe.css",
+    "main.js": "/game/static/js/main.157c6b71.js",
     "static/media/spon2.svg": "/game/static/media/spon2.022e6b2d0c676a6b6610165e969560be.svg",
     "static/media/hero.png": "/game/static/media/hero.868bbc28d3179dddcb58.png",
     "static/media/spon1.svg": "/game/static/media/spon1.3c6666e8a184dd95a2df9503f8cdb9f6.svg",
@@ -9,9 +9,20 @@
     "static/media/spon4.svg": "/game/static/media/spon4.8515512f3a9ff30e311873f205f1e375.svg",
     "static/media/avatar.png": "/game/static/media/avatar.01c8e7456330f3522524.png",
     "static/media/spon3.svg": "/game/static/media/spon3.856b3e34057d1754151c7ada99cae280.svg",
+    "static/media/inst-bl.svg": "/game/static/media/inst-bl.689064931b8ec8050c66f5a8322bb78a.svg",
+    "static/media/inst-gr.svg": "/game/static/media/inst-gr.c47625274737fb9914c746b1f39b2e48.svg",
+    "static/media/inst.svg": "/game/static/media/inst.948040324b04988d056fffbd800f3570.svg",
     "static/media/closeEye.svg": "/game/static/media/closeEye.9683681612d7cb83ff7f1d0dc00e73ea.svg",
+    "static/media/wa-bl.svg": "/game/static/media/wa-bl.6989e5e1f04dc8fab71657b5fb65490d.svg",
+    "static/media/wa-gr.svg": "/game/static/media/wa-gr.17df718dd8cf72b5e37a091648f1b5e0.svg",
+    "static/media/wa.svg": "/game/static/media/wa.5a60a97797f26b7799696c75c343d2f5.svg",
     "static/media/steam.svg": "/game/static/media/steam.fec0ad3a4f2611efabf91ce2b9b2abb7.svg",
-    "static/media/vk-white.svg": "/game/static/media/vk-white.b4131dbf9b28e847abfe9f8a2954b16a.svg",
+    "static/media/yt-bl.svg": "/game/static/media/yt-bl.3a351e52b48ab8fc0aa305da38b9e776.svg",
+    "static/media/yt-gr.svg": "/game/static/media/yt-gr.b133d9c406a37c209510ba939c553a41.svg",
+    "static/media/yt.svg": "/game/static/media/yt.2f8680c5b2ecfe9dc8cf5948f6ce4fef.svg",
+    "static/media/vk.svg": "/game/static/media/vk.b4131dbf9b28e847abfe9f8a2954b16a.svg",
+    "static/media/vk-bl.svg": "/game/static/media/vk-bl.9109dc5a195ae710422ec4fb4d10a562.svg",
+    "static/media/vk-gr.svg": "/game/static/media/vk-gr.46966305d5752648f966678f893b863a.svg",
     "static/media/mail.svg": "/game/static/media/mail.53f6d7617a39db524964fbfe30e79c0a.svg",
     "static/media/error.svg": "/game/static/media/error.4615389a93e0d3466dfed64ab64f8b0e.svg",
     "static/media/search.svg": "/game/static/media/search.082d277aabe11060d8f332f7fa6a81f6.svg",
@@ -24,11 +35,11 @@
     "static/media/icon-tg-gr.svg": "/game/static/media/icon-tg-gr.1d7430b38ab46a060347168abf4e0684.svg",
     "static/media/icon-tg.svg": "/game/static/media/icon-tg.1aa78e6546746d45df7f919b8b10d99a.svg",
     "static/media/google.svg": "/game/static/media/google.54131ca13fe225df08c360619349f024.svg",
-    "main.520a891f.css.map": "/game/static/css/main.520a891f.css.map",
-    "main.d72d44e9.js.map": "/game/static/js/main.d72d44e9.js.map"
+    "main.c6dfdbfe.css.map": "/game/static/css/main.c6dfdbfe.css.map",
+    "main.157c6b71.js.map": "/game/static/js/main.157c6b71.js.map"
   },
   "entrypoints": [
-    "static/css/main.520a891f.css",
-    "static/js/main.d72d44e9.js"
+    "static/css/main.c6dfdbfe.css",
+    "static/js/main.157c6b71.js"
   ]
 }
