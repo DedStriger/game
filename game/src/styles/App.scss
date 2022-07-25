@@ -3,7 +3,15 @@
     padding: 0 20px;
     width: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
+    transition: all .7s;
+    position: relative;
+    // left: -80vw;
+    // margin-left: 80vw;
+}
+
+
+html, body{
+    // overflow-x: hidden;
 }
 
 *{
@@ -40,11 +48,11 @@
 
     gap: 3px;
     top: 20px;
-    left: 0;
+    left: 10px;
     bottom: 0;
 
     & > div{
-        font-size: 12px;
+        font-size: 11px;
         line-height: 12px;
     }
 }

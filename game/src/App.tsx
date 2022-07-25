@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useState} from 'react';
 import { HashRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -28,12 +28,16 @@ function App() {
   !!location.pathname.match(COMUNITY_URL) || 
   location.pathname === BUY_URL
   , [location.pathname])
+  const [showMenu, setIsShowMenu] = useState(false)
+  
   return(
-    <div className="App">
-    <Header auth={checkAuth()}/>
+    <div className="App" 
+    // style={showMenu ? { left: '-80vw'} : {}}
+    >
+    <Header auth={checkAuth()} setShow={setIsShowMenu}  show={showMenu}/>
       <Switch location={location}>
         <Route path={MAIN_URL} exact>
-          <MainPage/>
+          <MainPage />
         </Route>
         <Route path={SERVICE_URL} exact>
           <ServicePage/>

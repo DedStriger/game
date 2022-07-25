@@ -9,15 +9,21 @@ import Sponsor from './components/Sponsor/Sponsor';
 
 export default function MainPage(){
     const [searchValue, setSearchvalue] = useState('')
+
+    const letterClick = (item: string) => {
+        document.getElementById(item)?.scrollIntoView(true)
+    }
     return(
     <>
         <img className={styles.img} src={hero} alt='hero'/>
-        <Letters/>
+        <Letters handleClick={letterClick}/>
         <Search
             value={searchValue}
             onValueChange={setSearchvalue}
         />
-        <SearchResultList/>
+        <SearchResultList letter='A'/>
+        <SearchResultList letter='B'/>
+        <SearchResultList letter='C'/>
         <FAQ/>
         <Sponsor/>
     </>

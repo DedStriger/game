@@ -4,7 +4,7 @@ import {useState, useCallback, FormEvent} from 'react'
 import user from '../../assets/man.svg'
 import lock from '../../assets/lock.svg'
 import google from '../../assets/google.svg'
-import vk from '../../assets/vk-white.svg'
+import vk from '../../assets/vk.svg'
 import steam from '../../assets/steam.svg'
 
 export default function SignTab(){

@@ -2,11 +2,15 @@ import { games } from '../../../../utils/mockData'
 import styles from './SearchResult.module.scss'
 import SearchResultItem from './SearchResultItem'
 
-export default function SearchResultList(){
+export type SearchResultListProps = {
+    letter: string;
+}
+
+export default function SearchResultList({letter} : SearchResultListProps){
     return(
-        <div>
+        <div id={letter}>
             <div className={styles.title}>
-                A
+                {letter}
             </div>
             <div className={styles.result}>
                 {

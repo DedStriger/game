@@ -11,12 +11,18 @@ export type SearchResultItemProps = {
 
 export default function SearchResultItem({id, imgSmall, name, tags} : SearchResultItemProps){
     return(
-        <Link to={{pathname: `${GAMES_URL}/${id}`}} className={styles.item}>
+        <div  className={styles.item}>
             <img src={imgSmall} className={styles.itemImg} alt='avatar'/>
             <div>
-                <div className={styles.itemName}>{name}</div>
-                <div className={styles.itemTags}>{tags}</div>
+                <Link to={{pathname: `${GAMES_URL}/${id}`}} className={styles.itemName}>{name}</Link>
+                <div className={styles.itemTags}>
+                    {
+                        typeof(tags) === 'string' && tags.split(',').map((_, index, arr) => (
+                            <Link to={{pathname: `${GAMES_URL}/${id}`}} key={_}>{_}{index !== (arr.length - 1)  && ', '}</Link>
+                        ))
+                    }
+                </div>
             </div>
-        </Link>
+        </div>
     )
 }
