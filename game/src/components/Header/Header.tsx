@@ -176,7 +176,7 @@ export default function Header({auth, show, setShow} : HeaderProps){
                 </div>
             </div>
             <div className={styles.bottom}>
-                <a href="#" target='_blank'>P2E игры</a>
+                <a href="#" target='_blank'>P2E</a>
                 <a href="#" target='_blank'>Игры</a>
                 <a href="#" target='_blank'>Telegram</a>
                 <a href="#" target='_blank'>Youtube</a>
