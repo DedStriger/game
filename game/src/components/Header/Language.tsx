@@ -26,7 +26,7 @@ export default function Language(){
     }, [])
     return(
         <div className={styles.lang}>
-            <div className={styles.langActive} onClick={() => setShow(!show)}>{lang}</div>
+            <div className={styles.langActive} onClick={() => setShow(!show)}>{lang} <span style={{width: 10, display: 'inline-block'}}>{show ? '-' : "+"}</span></div>
             {show &&
             <div className={styles.langContainer}>
                 <div className={styles.langItem} onClick={() => handleClick('En')}>English</div>

@@ -222,9 +222,7 @@ html {
   -ms-text-size-adjust: 100%
 }
 
-a:focus {
-  outline: thin dotted
-}
+
 
 a:active,
 a:hover {

@@ -77,11 +77,11 @@ export default function Header({auth, show, setShow} : HeaderProps){
                 style={show ? {right: 0} : {}} 
                 >
                     <div className={styles.groupLink}>
-                        <Link to={{pathname: MAIN_URL}} onClick={() => setShow(!show)}>
+                        <Link to={{pathname: MAIN_URL}} onClick={() => setShow(false)}>
                             Главная
                         </Link>
                         <Service onClick={() => setShow(!show)}/>
-                        <Link to={{pathname: CONTACT_URL}} onClick={() => setShow(!show)}>
+                        <Link to={{pathname: CONTACT_URL}} onClick={() => setShow(false)}>
                             Контакты
                         </Link>
                     </div>
@@ -119,13 +119,13 @@ export default function Header({auth, show, setShow} : HeaderProps){
                             auth ? (
                                 <>
                                 <Language />
-                                <Link to={{pathname: BUY_URL}} onClick={() => setShow(!show)}>
+                                <Link to={{pathname: BUY_URL}} onClick={() => setShow(false)}>
                                     Покупки
                                 </Link>
-                                <Link to={{pathname: FINANCE_URL}} onClick={() => setShow(!show)}>
+                                <Link to={{pathname: FINANCE_URL}} onClick={() => setShow(false)}>
                                     Финансы
                                 </Link>
-                                <Link to={{pathname: COMUNITY_URL}} onClick={() => setShow(!show)}>
+                                <Link to={{pathname: COMUNITY_URL}} onClick={() => setShow(false)}>
                                     Сообщения 
                                 </Link>
                                 <ProfileCircle hide={setShow}/>
@@ -133,10 +133,10 @@ export default function Header({auth, show, setShow} : HeaderProps){
                             ) : (
                                 <>
                                 <Language />
-                                <Link to={{pathname: REGISTER_URL}} onClick={() => setShow(!show)}>
+                                <Link to={{pathname: REGISTER_URL}} onClick={() => setShow(false)}>
                                     Регистрация
                                 </Link>
-                                <Link to={{pathname: SINGIN_URL}} onClick={() => setShow(!show)}>
+                                <Link to={{pathname: SINGIN_URL}} onClick={() => setShow(false)}>
                                     Вход 
                                 </Link>
                                 </>

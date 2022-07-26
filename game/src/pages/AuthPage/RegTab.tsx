@@ -20,27 +20,27 @@ export default function RegTab(){
                 value={name}
                 onChange={setName}
                 placeholder={'Имя пользователя'}
-                icon={user}
+                // icon={user}
             />
             <InputIcon
                 value={mail}
                 onChange={setMail}
                 placeholder={'Email'}
-                icon={mailSvg}
+                // icon={mailSvg}
                 type='email'
             />
             <InputIcon
                 value={pass}
                 onChange={setPass}
                 placeholder={'Пароль'}
-                icon={lock}
+                // icon={lock}
                 type='password'
             />
             <InputIcon
                 value={passT}
                 onChange={setPassT}
                 placeholder={'Подтвердите пароль'}
-                icon={lock}
+                // icon={lock}
                 type='password'
             />
             <div className={styles.bodyRow}>

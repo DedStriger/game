@@ -20,13 +20,13 @@ export default function SignTab(){
                 value={name}
                 onChange={setName}
                 placeholder={'Имя пользователя'}
-                icon={user}
+                // icon={user}
             />
             <InputIcon
                 value={pass}
                 onChange={setPass}
                 placeholder={'Пароль'}
-                icon={lock}
+                // icon={lock}
                 type='password'
             />
             <div className={styles.bodyRow}>

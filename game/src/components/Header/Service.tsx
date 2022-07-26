@@ -32,7 +32,7 @@ export default function Service({onClick} : ServiceProps){
     }
     return(
         <div className={styles.lang}>
-            <div className={styles.langActiveService} onClick={() => setShow(!show)}>Сервис</div>
+            <div className={styles.langActiveService} onClick={() => setShow(!show)}>Сервис <span style={{width: 10, display: 'inline-block'}}>{show ? '-' : "+"}</span></div>
             {show &&
             <div className={styles.langContainer}>
                 <Link to={{pathname: SERVICE_URL}} className={styles.langItem} onClick={handleClick}>Сервис</Link>

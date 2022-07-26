@@ -2,7 +2,7 @@
 import styles from './AuthPage.module.scss'
 
 export type InputIconProps = {
-    icon: string;
+    icon?: string;
     value: string;
     onChange: (val: string) => void;
     placeholder: string;

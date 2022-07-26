@@ -32,15 +32,30 @@
     &Name{
         font-family: 'Chakra Petch';
         font-weight: 600;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 22px;
         margin-bottom: 5px;
+
+        &:hover{
+            color: #069514;
+            opacity: 1 !important; 
+        }
     }
 
     &Tags{
         font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 13px;
+        line-height: 20px;
+
+        a{
+            font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+            &:hover{
+                color: #069514;
+                opacity: 1 !important; 
+            }
+        }
     }
 }
 

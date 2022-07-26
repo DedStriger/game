@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-left: 20px;
 }
 
 .groupLink{
@@ -150,22 +151,13 @@
         text-align: center;
         padding: 7px 12px;
         min-width: 80px;
-        background: #322F2F;
+        border: 1px solid #444;
         border-radius: 5px; 
         font-size: 14px;
-        line-height: 21px;
-        transition: background .3s;
-
-        &:first-child{
-            border-radius: 5px 5px 0px 0px;
-        }
-
-        &:last-child{
-            border-radius: 0px 0px 5px 5px;
-        }
+        transition: border-color .3s;
 
         &:hover{
-            background: #069514;
+            border-color: #069514;
             opacity: 1 !important;
         }
     }
@@ -180,7 +172,6 @@
     a{
         font-family: 'Inter';
         font-size: 14px;
-        line-height: 21px;
         text-align: center;
         padding: 7px 12px;
         border-radius: 10px;
@@ -190,7 +181,6 @@
         color: #FFFFFF;
 
         &:hover{
-            background: #069514;
             border-color: #069514;
             opacity: 1 !important;
         }
@@ -235,16 +225,15 @@
         text-align: center;
         padding: 7px 12px;
         min-width: 80px;
-        background: #322F2F;
+        border: 1px solid #444;
         border-radius: 5px; 
-        font-size: 17px;
-        line-height: 21px;
+        font-size: 14px;
         position: relative;
         cursor: pointer;
-        transition: background .3s;
+        transition: border-color .3s;
 
         &:hover{
-            background: #069514;
+            border-color: #069514;
             opacity: 1 !important;
         }
     }
@@ -316,6 +305,7 @@
         width: 80%;
         display: block;
         padding: 20px 0px 0px;
+        margin-left: 0;
         gap: 15px;
         position: fixed;
         overflow: scroll;
@@ -355,12 +345,17 @@
             border: 1px solid #444;
             border-radius: 10px;
             padding: 10px 15px;
-            font-size: 17px;
+            font-size: 14px;
             margin-bottom: 10px;
             line-height: 20px;
             display: block;
             margin-right: 10px;
         margin-left: 10px;
+
+        &:hover{
+            border-color: #069514;
+            opacity: 1 !important;
+        }
         }
     }
 
@@ -375,7 +370,7 @@
         
         a{
         border-radius: 0px;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 20px;
         margin-right: 10px;
         margin-left: 10px;
@@ -414,7 +409,7 @@
             // width: 100%;
             padding: 10px;
             border-radius: 0px;
-            font-size: 17px;
+            font-size: 14px;
             margin-right: 10px;
             margin-left: 10px;
             
@@ -429,24 +424,33 @@
             border: 1px solid #444;
             background: transparent;
             border-radius: 10px;
-            font-size: 17px;
+            font-size: 14px;
             margin-bottom: 10px;
             line-height: 20px;
             padding: 10px 15px;
             margin-right: 10px;
             margin-left: 10px;
+
+            span{
+                width: 10px;
+                display: inline-block;
+            }
         }
 
         &ActiveService{
             text-align: center;
             margin-bottom: 10px;
             line-height: 20px;
-            font-size: 17px;
+            font-size: 14px;
             padding: 10px 15px;
             border: 1px solid #444;
             border-radius: 10px;
             margin-right: 10px;
             margin-left: 10px;
+            &:hover{
+                border-color: #069514;
+                opacity: 1 !important;
+            }
         }
     }
 
