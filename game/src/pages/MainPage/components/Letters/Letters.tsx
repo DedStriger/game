@@ -31,7 +31,7 @@ export default function Letters({handleClick} : LettersProps){
     return(
         <div className={styles.container} ref={ref}>
             {
-                lettersMock.map((item, index) => <div className={styles.item} onClick={() => handleClick && handleClick(item)} key={index}>{item}</div>)
+                lettersMock.map((item, index) => <div id={`id${item}`} className={styles.item} onClick={() => handleClick && handleClick(item)} key={index}>{item}</div>)
             }
         </div>
     )

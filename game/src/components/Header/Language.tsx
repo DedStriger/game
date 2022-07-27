@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from './Header.module.scss'
 
 export default function Language(){
-    const [lang, setLang] = useState('Язык')
+    const [lang, setLang] = useState('Ru')
     const [show, setShow] = useState(false)
     const handleClick = (lang : string) => {
         setLang(lang)

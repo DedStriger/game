@@ -21,9 +21,11 @@ export default function MainPage(){
             value={searchValue}
             onValueChange={setSearchvalue}
         />
+        <div id='result'>
         <SearchResultList letter='A'/>
         <SearchResultList letter='B'/>
         <SearchResultList letter='C'/>
+        </div>
         <FAQ/>
         <Sponsor/>
     </>
