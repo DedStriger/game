@@ -43,7 +43,7 @@
         &Active{
             border-radius: 10px;
             background: #1B1B1B;
-            color: #069514;
+            color: var(--active);
         }
     }
 }
@@ -65,7 +65,7 @@
 
     &:checked{
         & + label:before{
-            background: #069514;
+            background: var(--active);
         }
     }
 
@@ -84,7 +84,7 @@
             width: 15px;
             height: 15px;
             border-radius: 15px;
-            border: 1px solid #069514;
+            border: 1px solid var(--active);
             margin-right: 10px;
         }
     }
@@ -137,7 +137,7 @@
 
     &:hover{
         opacity: 1 !important;
-        background: #069514;
+        background: var(--active);
     }
 }
 

@@ -72,7 +72,7 @@
                 transition: color .3s;
 
                 &:hover{
-                    color: #069514;
+                    color: var(--active);
                 }
             }
         }

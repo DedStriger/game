@@ -98,7 +98,7 @@
 
     &Status{
         font-size: 14px;
-        color: #069514;
+        color: var(--active);
     }
 }
 
@@ -172,7 +172,7 @@
             }
 
             &:hover{
-                color: #069514;
+                color: var(--active);
             }
         }
     }
@@ -181,7 +181,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #069514;
+        background: var(--active);
         border-radius: 10px;
         color: #fff;
         text-decoration: none;

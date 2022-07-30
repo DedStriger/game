@@ -157,7 +157,7 @@
         transition: border-color .3s;
 
         &:hover{
-            border-color: #069514;
+            border-color: var(--active);
             opacity: 1 !important;
         }
     }
@@ -181,7 +181,7 @@
         color: #FFFFFF;
 
         &:hover{
-            border-color: #069514;
+            border-color: var(--active);
             opacity: 1 !important;
         }
     }
@@ -232,7 +232,7 @@
         transition: border-color .3s;
 
         &:hover{
-            border-color: #069514;
+            border-color: var(--active);
             opacity: 1 !important;
         }
     }
@@ -271,7 +271,7 @@
         transition: color .3s;
 
         &:hover{
-            color: #069514;
+            color: var(--active);
         }
     }
 }
@@ -352,7 +352,7 @@
         margin-left: 10px;
 
         &:hover{
-            border-color: #069514;
+            border-color: var(--active);
             opacity: 1 !important;
         }
         }
@@ -447,7 +447,7 @@
             margin-right: 10px;
             margin-left: 10px;
             &:hover{
-                border-color: #069514;
+                border-color: var(--active);
                 opacity: 1 !important;
             }
         }

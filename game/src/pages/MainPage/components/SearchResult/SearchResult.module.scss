@@ -37,7 +37,7 @@
         margin-bottom: 5px;
 
         &:hover{
-            color: #069514;
+            color: var(--active);
             opacity: 1 !important; 
         }
     }
@@ -52,7 +52,7 @@
         font-size: 13px;
         line-height: 20px;  
             &:hover{
-                color: #069514;
+                color: var(--active);
                 opacity: 1 !important; 
             }
         }

@@ -29,7 +29,7 @@
     border-radius: 10px;
 
     &Active{
-        border: 1px solid #069514;
+        border: 1px solid var(--active);
     }
 
     img{
@@ -55,7 +55,7 @@
         width: 10px;
         height: 10px;
         border-radius: 10px;
-        background: #069514;
+        background: var(--active);
         bottom: 4px;
         right: 0;
     }

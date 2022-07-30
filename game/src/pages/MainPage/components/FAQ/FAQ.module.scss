@@ -75,8 +75,8 @@
         height: 20px;
 
         &Active{
-            color: #069514;
-            border-color: #069514;
+            color: var(--active);
+            border-color: var(--active);
         }
     }
 }

@@ -30,7 +30,7 @@
         line-height: 50px;
         max-width: 250px;
         margin: 0 auto;
-        background: #069514;
+        background: var(--active);
         border-radius: 10px;
         border: none;
         outline: none;
@@ -58,7 +58,7 @@
         border: none;
         outline: none;
         display: block;
-        background: #069514;
+        background: var(--active);
         border-radius: 10px;
         font-size: 16px;
         line-height: 40px;
@@ -131,7 +131,7 @@
                 }
 
                 &:hover{
-                    color: #069514;
+                    color: var(--active);
                 }
             }
         }

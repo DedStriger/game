@@ -108,7 +108,7 @@
     line-height: 40px;
     text-align: center;
     width: 100%;
-    background: #069514;
+    background: var(--active);
     border-radius: 10px;
 }
 
@@ -117,13 +117,13 @@
     min-width: 40px;
     border-radius: 25px;
     padding: 5px;
-    border: 2px solid #069514;
+    border: 2px solid var(--active);
     margin-right: 10px;
     cursor: pointer;
     transition: all .3s;
 
     &Active{
-        background: #069514;
+        background: var(--active);
 
         & > div{
             transform: translateX(20px);
@@ -135,7 +135,7 @@
         width: 10px;
         height: 10px;
         border-radius: 20px;
-        background: #069514;
+        background: var(--active);
         transition: all .3s;
     }
 
