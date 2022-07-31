@@ -23,7 +23,7 @@ export default function SearchResultList({letter} : SearchResultListProps){
                 } else {
                     if(elem){
                         {/*@ts-expect-error*/}
-                        elem.style.color = '#bdbdbd'
+                        elem.style.color = '#bdbdbd' 
                     }
                 }
             })
